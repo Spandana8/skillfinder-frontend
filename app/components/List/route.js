@@ -5,7 +5,7 @@ angular.module('skillFinderApp')
   $stateProvider
   .state('list',{
     url: '/list/:domain',
-    templateUrl: 'app/components/Home/views/List.html',
+    templateUrl: 'app/components/List/views/List.html',
     controller: 'ListController'
   })
 } )

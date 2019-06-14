@@ -1,41 +1,171 @@
-<div class="container-fluid">
-    <div class="row">
-    <div class="col-12">
-    <div class="card card-inverse" style="background-color: #333; border-color: #333;">
-    <div class="card-block">
-    <div class="row">
-    <div class="col-md-8 col-sm-8">
-    <h2 class="card-title">Name: Stffanie Osterich</h2>
-    <p class="card-text"><strong>Profile: </strong> Web Developer </p>
-    <p class="card-text"><strong>Skills: </strong> Theme, plugin and website development </p>
-    <p><strong>Platform: </strong>
-    <span class="badge bg-primary">WordPress</span> 
-    <span class="badge bg-info">Weebly</span>
-    <span class="badge bg-warning">Bootstrap</span>
-    <span class="badge bg-success">Wix</span>
-    </p>
+
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Profile</title>
+  <link rel="shortcut icon" href="assets/images/Nineleaps.png">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" />
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <style type="text/css" href="assets/css/profile.css"></style>
+
+</head>
+<body > 
+  
+   <div class="container">
+    <div class="row m-y-2">
+        <div class="col-lg-8 push-lg-4">
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a href="" data-target="#profile" data-toggle="tab" class="nav-link active">Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" data-target="#edit" data-toggle="tab" class="nav-link">Edit</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" data-target="#feedback" data-toggle="tab" class="nav-link">Recommendations</a>
+                </li>
+            </ul>
+            <div class="tab-content p-b-3">
+                <div class="tab-pane active" id="profile">
+                    <h4 class="m-y-2">User Profile</h4>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h6>Designation</h6>
+                            <p>
+                                Software Development Engineer II
+                            </p>
+                            <hr>
+                            <h6>Contact</h6>
+                            <p>
+                                <div id="emailUp"><strong>Email:</strong> Nl@nl.com</div>
+                                <div id="PhoneNo"><strong>Phone No:</strong> 4354435454</div>
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <h6>Primary Skills</h6>
+                            <a href="" class="tag tag-default tag-pill blue">html5</a>
+                            <a href="" class="tag tag-default tag-pill blue">react</a>
+                            <a href="" class="tag tag-default tag-pill blue">angularjs</a>
+                            <hr>
+                            <h6>Additional Skills</h6>
+                            <a href="" class="tag tag-default tag-pill blue">css3</a>
+                            <a href="" class="tag tag-default tag-pill blue">jquery</a>
+                            <a href="" class="tag tag-default tag-pill blue">bootstrap</a>
+                            <hr>
+                            <span><a href="https://www.linkedin.com/"><i class="fa fa-linkedin" style="font-size:20px;color:whitesmoke"></i></a></span>
+                            <span><a href="https://accounts.google.com"><i style="font-size:20px;color: whitesmoke" class="fa">&#xf0d4;</i></a></span>
+                         </div>
+                        <div class="col-md-12">
+                            <h4 class="m-t-2">Project Activity</h4>
+                            <table class="table table-hover table-striped">
+                                <tbody>                                    
+                                    <tr>
+                                        <td>
+                                            <strong>Project 1</strong> worked as an Angular developer for the duration of <strong>13 months</strong>.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <strong>Project 2</strong> worked as a senior Angular developer for the duration of <strong>8 months</strong>.
+                                        </td>
+
+                                    </tr>
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!--/row-->
+                </div>
+                <div class="tab-pane" id="feedback">
+                    <h4 class="m-y-2">Recommendations</h4>
+                    <div class="alert alert-info alert-dismissable">
+                        <a class="panel-close close" data-dismiss="alert">×</a> Coming Soon!!!
+                    </div>
+                    <table class="table table-hover table-striped">
+                        <tbody>                                    
+                            <tr>
+                                <td>
+                                   <span class="pull-xs-right font-weight-bold">Linkedin Endorsements</span> Coming Soon...
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                   <span class="pull-xs-right font-weight-bold">Employees Recommendation</span> Coming Soon...
+                                </td>
+                            </tr>
+                           
+                        </tbody> 
+                    </table>
+                </div>
+                <div class="tab-pane" id="edit">
+                    <h4 class="m-y-2">Edit Profile</h4>
+                    <form role="form">
+                        <div class="form-group row">
+                            <label class="col-lg-3 col-form-label form-control-label">First name</label>
+                            <div class="col-lg-9">
+                                <input class="form-control" type="text" value="NL" readonly>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-lg-3 col-form-label form-control-label">Last name</label>
+                            <div class="col-lg-9">
+                                <input class="form-control" type="text" value="NL" readonly>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-lg-3 col-form-label form-control-label">Email</label>
+                            <div class="col-lg-9">
+                                <input class="form-control" type="email" value="Nl@NL.com" readonly>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-lg-3 col-form-label form-control-label">Phone No.</label>
+                            <div class="col-lg-9">
+                                <input class="form-control" type="email" value="1234567890">
+                            </div>
+                        </div>
+                       <div class="form-group row">
+                            <label class="col-lg-3 col-form-label form-control-label">Primary Skills</label>
+                            <div class="col-lg-9">
+                                <input class="form-control" type="url" value="Angular" readonly>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-lg-3 col-form-label form-control-label">Additional Skills</label>
+                            <div class="col-lg-9">
+                                <input class="form-control" type="text" value="CSS3,HTML5,React" placeholder="Add your Additional Skills"> 
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-lg-3 col-form-label form-control-label"></label>
+                            <div class="col-lg-9">
+                                <input type="reset" class="btn btn-secondary" value="Cancel">
+                                <input type="button" class="btn btn-primary" value="Save Changes">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 pull-lg-8 text-xs-center">
+            <img src="assets/images/mo.jpg" class="m-x-auto img-fluid img-circle" alt="avatar">
+            <h6 class="m-t-2"><strong>Name:</strong>ABCDE</h6>
+            <h6 class="m-t-2"><strong>Domain:</strong>Front End</h6>
+            <h6 class="m-t-2"><strong>Location:</strong>Kormangala, Bangalore.</h6>
+
+        </div>
     </div>
-    <div class="col-md-4 col-sm-4 text-center">
-    <img class="btn-md" src="assets/images/card-image.png" alt="" style="border-radius:50%;">
-    </div>         
-    <div class="col-md-4 col-sm-4 text-center">
-    <h2><strong> 5.2K </strong></h2>                    
-    <p><small>Fans</small></p>
-    <button class="btn btn-primary btn-block btn-md"><span class="fa fa-facebook-square"></span> Like  </button>
-    </div>
-    <div class="col-md-4 col-sm-4 text-center">
-    <h2><strong>1.4K</strong></h2>                    
-    <p><small>Following</small></p>
-    <button class="btn btn-success btn-block btn-md"><span class="fa fa-twitter-square"></span> Tweet </button>
-    </div>
-    <div class="col-md-4 col-sm-4 text-center">
-    <h2><strong>3.8K</strong></h2>                    
-    <p><small>Followers</small></p>
-    <button type="button" class="btn btn-danger btn-block btn-md"><span class="fa fa-google-plus-square"></span> Follow </button>  
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div> 
-    </div>
+</div>
+<hr>
+  
+  <!--scripts loaded here-->
+  
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js"></script>
+   </body>
+</html>
