@@ -4,13 +4,16 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.9.0",
     "angular": "^1.7.5",
+    "angular-animate": "^1.7.8",
     "angular-growl-v2": "^0.7.5",
+    "angular-owl-carousel2": "^1.0.6",
     "angular-ui-router": "^1.0.20",
     "bootstrap": "^4.3.1",
+    "grunt": "^1.0.4",
     "jquery": "^3.3.1",
+    "owl.carousel": "^2.3.4",
     "ui-bootstrap4": "^3.0.6"
   },
-  "devDependencies": {},
   "engines": {
     "node": ">=0.10.0"
   },

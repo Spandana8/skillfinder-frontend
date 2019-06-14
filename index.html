@@ -13,6 +13,8 @@
   <link rel="stylesheet" href="assets/css/styles.css">
   <link rel="stylesheet" href="assets/css/home.css">
   <link href="node_modules/angular-growl-v2/build/angular-growl.css" rel="stylesheet">
+  <link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.carousel.css" />
+  <link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.theme.default.css" />
 
     <!-- Custom fonts for this template -->
     <link href="node_modules/@fortawesome/fontawesome-free/css/all.css" rel="stylesheet">
@@ -22,21 +24,31 @@
     <!-- Custom styles for this template -->
     <link href="../assets/css/home.css" rel="stylesheet">
 
+     <!-- build:css(.tmp) styles/styles.css -->
+
 </head>
 <body class="ng-clock">
-  <div class="page-wrapper masthead">
-    <div growl></div>
-    <div ui-view></div>
+  <div class="page-wrapper view-container">
+    <div growl></div> 
+    <div class="view" ui-view></div>
   </div>
+
+   <!-- build:js(.) scripts/oldieshim.js -->
 
   <!-- Include all library scripts -->
   <script src="node_modules/jquery/dist/jquery.min.js"></script>
   <script src="node_modules/angular/angular.js"></script>
+  <script src="node_modules/angular-animate/angular-animate.min.js"></script>
   <script src="node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
   <script src="node_modules/angular-growl-v2/build/angular-growl.js"></script>
   <script src="node_modules/ui-bootstrap4/dist/ui-bootstrap-tpls.js"></script>
+  <script src="node_modules/owl.carousel/dist/owl.carousel.js"></script>
+  <script src="node_modules/angular-owl-carousel2/src/angular-owl-carousel-2.js"></script>
   
+<!-- endbuild -->
 
+
+  <!-- build:js scripts/scripts.js -->
   <!-- Include all route files -->
   <script src="app/app.js"></script>
   <script src="app/module.js"></script>
@@ -44,6 +56,7 @@
   <script src="app/components/Home/route.js"></script>
   <script src="app/components/List/route.js"></script>
   <script src="app/components/Profile/route.js"></script>
+  <script src="app/skillsdata.js"></script>
  
   <!-- Include all controllers -->
   <script src="app/components/Home/controllers/HomeController.js"></script>
@@ -55,7 +68,7 @@
   <!-- Include all services -->
   <script src="services/HomeService.js"></script>
   
-
+ <!-- endbuild -->
 </body>
 
 </html>
