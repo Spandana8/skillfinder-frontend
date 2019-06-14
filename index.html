@@ -1,0 +1,48 @@
+<!doctype html>
+<html class="no-js" ng-app="skillFinderApp">
+
+<head>
+  <meta charset="utf-8">
+
+  <title ng-bind="'skillFinderApp'">Survey</title>
+  <meta name="description" content="" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link href="node_modules/angular-growl-v2/build/angular-growl.css" rel="stylesheet">
+
+</head>
+<body class="ng-clock">
+  <div class="page-wrapper">
+    <div growl></div>
+    <div ui-view></div>
+  </div>
+
+  <!-- Include all library scripts -->
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/angular/angular.js"></script>
+  <script src="node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
+  <script src="node_modules/angular-growl-v2/build/angular-growl.js"></script>
+  <script src="node_modules/ui-bootstrap4/dist/ui-bootstrap-tpls.js"></script>
+  
+
+  <!-- Include all route files -->
+  <script src="app/app.js"></script>
+  <script src="app/module.js"></script>
+  <script src="shared/config/settings.js"></script> 
+  <script src="app/components/Home/route.js"></script>
+ 
+  <!-- Include all controllers -->
+  <script src="app/components/Home/controllers/HomeController.js"></script>
+ 
+
+
+  <!-- Include all services -->
+  <script src="services/HomeService.js"></script>
+  
+
+</body>
+
+</html>
