@@ -12,8 +12,10 @@
 angular
   .module('skillFinderApp', [
     'ui.router',
+    'ngAnimate',
     'ui.bootstrap',
     'angular-growl',
+    'angular-owl-carousel-2',
     'skillFinderApp.controllers',
     'skillFinderApp.services'
 ])

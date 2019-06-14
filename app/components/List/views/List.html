@@ -1,10 +1,10 @@
-<div class="container-fluid" >
+<div class="container-fluid masthead lists">
     <div class="list-page">
         <div class="row">
             <div class="offset-md-3 col-md-6">
                 <div class="d-flex justify-content-center h-100">
                     <div class="searchbar">
-                        <input class="search_input" type="text" name="" placeholder="Search...">
+                        <input class="search_input" type="text" name="" ng-model="searchText" placeholder="Search...">
                         <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
                     </div>
                 </div>
@@ -13,51 +13,19 @@
 
         <div class="row">
             <div class="col-md-12 list-section">
-                <table class="table table-striped table-hover">
-                    <!-- <thead>
-                        <tr>
-                            <th scope="col">Profile</th>
-                            <th scope="col">Name</th>
-                            <th scope="col">Domain</th>
-                            <th scope="col">Handle</th>
-                        </tr>
-                    </thead> -->
+                <table class="table table-hover">                
                     <tbody>
-                        <tr>
+                        <tr ng-repeat ="list in lists | filter:searchText">
                             <td width="10%"><img src="../../../../assets/images/profile.jpg" /></td>
                             <td>
                                 <div>
-                                    <h3>Spandana</h3>
-                                    <h6>Frontend</h6>
-                                    <p>Angular</p>
+                                    <h3>{{list.name}}</h3>
+                                    <h6>{{list.domain}}</h6>
+                                    <p>{{list.stack}}</p>
                                 </div>
-                            </td>                    
-                            <td>2.4 years</td>
-                        </tr>
-                        <tr>
-                            <td width="10%"><img src="../../../../assets/images/profile.jpg" /></td>
-                            <td>
-                                    <div>
-                                        <h3>Spandana</h3>
-                                        <h6>Frontend</h6>
-                                        <p>Angular</p>
-                                    </div>
-                                </td>                          
-                               
-                                <td>2.4 years</td>
-                        </tr>
-                        <tr>
-                            <td width="10%"><img src="../../../../assets/images/profile.jpg" /></td>
-                            <td>
-                                    <div>
-                                        <h3>Spandana</h3>
-                                        <h6>Frontend</h6>
-                                        <p>Angular</p>
-                                    </div>
-                                </td>                          
-                               
-                                <td>2.4 years</td>
-                        </tr>
+                            </td>
+                            <td>{{list.experience}}</td>
+                        </tr>                    
                     </tbody>
                 </table>
             </div>
